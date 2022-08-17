@@ -9,8 +9,10 @@ tags: GitHub
 
 项目命名格式：username.github.io，并设置为Public
 ![new_repository](/images/new_repository.png)
-配置中找到pages项，配置使用哪个分支代码
+新建index.html写入内容提交代码后
+在配置中找到pages项，配置使用哪个分支代码
 ![new_repository](/images/setting.png)
+打开 username.github.io 就可以看到自己的GitHub Pages了
 
 ## 二，使用[HEXO](https://hexo.io/zh-cn/docs/)
 
@@ -78,4 +80,5 @@ hexo g
 hexo d
 ```
 
-我们再打开 username.github.io 就可以看到自己的GitHub Pages了
+稍等待后 刷新username.github.io 就可以了
+pages分支代码是hexo编译后的.deploy_git
