@@ -2,7 +2,7 @@
 menu:
   首页: /
   归档: /archives
-rss: /atom.xml
+# rss: /atom.xml
 
 # Content
 excerpt_link: Read More
@@ -11,11 +11,11 @@ fancybox: true
 # Sidebar
 sidebar: right
 widgets:
+- recent_posts
+- archive
 - category
 - tag
-- tagcloud
-- archive
-- recent_posts
+# - tagcloud
 
 # display widgets at the bottom of index pages (pagination == 2)
 index_widgets:
@@ -25,7 +25,7 @@ index_widgets:
 
 # widget behavior
 archive_type: 'monthly'
-show_count: false
+show_count: true
 
 # Miscellaneous
 google_analytics:
