@@ -52,7 +52,7 @@ npm run server
 
 启动服务，就可以在[本机4000端口](http://localhost:4000)查看效果
 
-## 三，使用hexo编译并更新到GitHub分支
+## 三，使用Hexo编译并更新到GitHub分支
 
 根目录找到_config.yml文件，并配置
 
