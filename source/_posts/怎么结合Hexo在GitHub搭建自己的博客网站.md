@@ -46,7 +46,7 @@ npm install
 
 安装完依赖 使用
 
-```
+```git
 npm run server
 ```
 
@@ -57,6 +57,10 @@ npm run server
 根目录找到_config.yml文件，并配置
 
 ```yml
+# URL
+## 在此处设置您的网站url。例如，如果您使用GitHub页面
+url: https://black0923.github.io
+...
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
