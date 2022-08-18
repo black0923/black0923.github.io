@@ -1,9 +1,43 @@
 #sidebar
-  @media mq-normal
-    column(sidebar-column)
+  width:sidebar-width
+  height:100%
+  box-sizing:border-box
+  padding:0 20px
+  position:fixed
+  left:0
+  top:0
+  overflow-y:auto
+  background-color:#fff
+
 
 .widget-wrap
   margin: block-margin 0
+#user
+  margin:50px 0
+  .face
+    display:flex
+    justify-content:center
+    .face_img
+      width:100px
+      height:100px
+      background: url(face-url) center
+      background-size:cover
+      border-radius:50%
+  .name
+    padding:20px 0
+    text-align:center
+    font-size:22px
+    font-weight:700
+  .menu-link
+    display:flex
+    justify-content:center
+    .menu-link-item
+      padding:0 20px
+      color:color-link
+      text-decoration:none
+      &:hover
+        text-decoration:underline
+       
 
 .widget-title
   @extend $block-caption

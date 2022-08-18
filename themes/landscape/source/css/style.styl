@@ -32,8 +32,7 @@ body
 
 .outer
   clearfix()
-  max-width: (column-width + gutter-width) * columns + gutter-width
-  margin: 0 auto
+  margin: 0 0 0 sidebar-width
   padding: 0 gutter-width
 
 .inner
@@ -62,20 +61,10 @@ body
   left: 0
   transition: 0.2s ease-out
   z-index: 1
+  background: color-background
   .mobile-nav-on &
     left: mobile-nav-width
-  >.outer_box
-    background: color-background
 
-if sidebar and sidebar isnt bottom
-  #main
-    @media mq-normal
-      column(main-column)
-
-if sidebar is left
-  @media mq-normal
-    #main
-      float: right
 
 @import "_extend"
 @import "_partial/header"

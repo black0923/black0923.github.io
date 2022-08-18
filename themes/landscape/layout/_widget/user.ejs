@@ -1,0 +1,15 @@
+
+    <div id="user">
+        <div class="face">
+            <div class="face_img" ></div>
+            
+        </div>
+        <div class="name">
+            <span>故明月</span>
+        </div>
+        <div class="menu-link">
+            <% for (var i in theme.menu){ %>
+                <a class="menu-link-item" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+              <% } %>
+        </div>
+    </div>
