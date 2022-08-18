@@ -17,6 +17,61 @@ else
       list-style: disc
     ol
       list-style: decimal
+  .archive-list
+    display: flex
+    flex-wrap: wrap
+    .archive-list-item
+      background-color #f0f0f0
+      padding: 2px 6px
+      margin-right: 6px
+      position: relative
+      border-radius: 2px
+      cursor pointer
+      &:hover
+        transform: rotate(6deg)
+      .archive-list-count
+        position absolute
+        right: 0
+        top: 0
+        transform: translate(50%,-50%)
+        border-radius: 6px
+        display: flex
+        justify-content: center
+        align-items: center
+        box-sizing: border-box
+        color: #0094ff
+        font-size: 12px
+        text-align: center
+        &:before,&::after
+          display: none
+  .tag-list
+    display: flex
+    flex-wrap: wrap
+    .tag-list-item
+      background-color #f0f0f0
+      padding: 2px 6px
+      margin-right: 6px
+      position: relative
+      border-radius: 2px
+      cursor pointer
+      &:hover
+        transform: rotate(6deg)
+      .tag-list-count
+        position absolute
+        right: 0
+        top: 0
+        transform: translate(50%,-50%)
+        border-radius: 6px
+        display: flex
+        justify-content: center
+        align-items: center
+        box-sizing: border-box
+        color: #0094ff
+        font-size: 12px
+        text-align: center
+        &:before,&::after
+          display: none
+
 
 .category-list-count
 .tag-list-count

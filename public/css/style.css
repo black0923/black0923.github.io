@@ -1406,6 +1406,132 @@ pre .javascript .function {
 .widget ol ol {
   list-style: decimal;
 }
+.widget .archive-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.widget .archive-list .archive-list-item {
+  background-color: #f0f0f0;
+  padding: 2px 6px;
+  margin-right: 6px;
+  position: relative;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.widget .archive-list .archive-list-item:hover {
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -ms-transform: rotate(6deg);
+  transform: rotate(6deg);
+}
+.widget .archive-list .archive-list-item .archive-list-count {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translate(50%, -50%);
+  -moz-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #0094ff;
+  font-size: 12px;
+  text-align: center;
+}
+.widget .archive-list .archive-list-item .archive-list-count:before,
+.widget .archive-list .archive-list-item .archive-list-count::after {
+  display: none;
+}
+.widget .tag-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.widget .tag-list .tag-list-item {
+  background-color: #f0f0f0;
+  padding: 2px 6px;
+  margin-right: 6px;
+  position: relative;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.widget .tag-list .tag-list-item:hover {
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -ms-transform: rotate(6deg);
+  transform: rotate(6deg);
+}
+.widget .tag-list .tag-list-item .tag-list-count {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translate(50%, -50%);
+  -moz-transform: translate(50%, -50%);
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #0094ff;
+  font-size: 12px;
+  text-align: center;
+}
+.widget .tag-list .tag-list-item .tag-list-count:before,
+.widget .tag-list .tag-list-item .tag-list-count::after {
+  display: none;
+}
 .category-list-count,
 .tag-list-count,
 .archive-list-count {
