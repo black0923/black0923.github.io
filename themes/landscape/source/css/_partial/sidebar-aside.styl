@@ -7,9 +7,30 @@
   left:0
   top:0
   overflow-y:auto
+  overflow-x:hidden 
   background-color:#fff
-  box-shadow: 1px 2px 3px #ddd;
+  box-shadow: 1px 2px 3px #ddd
+  z-index 9
+  &::before
+    content: ''
+    width: 100%
+    height: 100vh
+    background-color #0094ff
+    position: absolute
+    right: 0
+    top: 0
+    transform: rotate(80deg)
+    transform-origin: right 70px
+    z-index -1
 
+@keyframes sty {
+  0%{
+    transform: translate(0,0) rotate(0deg)
+    }
+  100%{
+    transform: translate(0,0) rotate(-720deg)
+    }
+}
 
 .widget-wrap
   margin: block-margin 0
@@ -18,12 +39,29 @@
   .face
     display:flex
     justify-content:center
+    position relative
     .face_img
       width:100px
       height:100px
       background: url(face-url) center
       background-size:cover
       border-radius:50%
+      &:hover
+        animation: sty 1000ms linear 0ms infinite
+    &::after
+        content: ''
+        width:100vw
+        height: 4px
+        position: absolute
+        bottom: 0
+        left: 50%
+        background-color #0003
+        z-index -1
+        transform: rotate(-10deg)
+        transform-origin: left top
+        transition: width 300ms
+
+        
   .name
     padding:20px 0
     text-align:center
