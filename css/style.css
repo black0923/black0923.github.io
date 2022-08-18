@@ -128,7 +128,7 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 .outer {
-  margin: 0 0 0 360px;
+  margin: 0 0 0 20vw;
   padding: 0 20px;
 }
 .outer:before,
@@ -175,8 +175,18 @@ body {
   z-index: 1;
   background: #f8f8fa;
 }
-.mobile-nav-on #wrap {
-  left: 280px;
+@media screen and (max-width: 800px) {
+  #wrap #sidebar {
+    position: relative;
+    width: 100vw;
+    height: auto;
+  }
+  #wrap #sidebar .widget-wrap {
+    display: none;
+  }
+  #wrap .outer {
+    margin-left: 0;
+  }
 }
 .article-date,
 .article-category-link,
@@ -1278,7 +1288,7 @@ pre .javascript .function {
   }
 }
 #sidebar {
-  width: 360px;
+  width: 20vw;
   height: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
