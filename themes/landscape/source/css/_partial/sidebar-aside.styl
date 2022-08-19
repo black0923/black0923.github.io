@@ -14,6 +14,32 @@
   &::-webkit-scrollbar 
     width: 0
     height: 0
+  .widget-wrap
+    .widget
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        right: 0
+        top: 0
+        transform: translate(-15px, 15px) translateY(-100%)
+        width: 50px
+        height: 50px
+        background-repeat: no-repeat
+        background-size: 100% auto
+    &:nth-child(2)
+       .widget
+         &:before
+           background-image: url('/images/xh/eat.gif')
+    &:nth-child(3)
+       .widget
+         &:before
+           background-image: url('/images/xh/呃.gif')
+    &:nth-child(4)
+       .widget
+         &:before
+           background-image: url('/images/xh/sq.gif')
+
 
 @keyframes sty {
   0%{

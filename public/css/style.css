@@ -1319,6 +1319,32 @@ pre .javascript .function {
   width: 0;
   height: 0;
 }
+#sidebar .widget-wrap .widget {
+  position: relative;
+}
+#sidebar .widget-wrap .widget:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translate(-15px, 15px) translateY(-100%);
+  -moz-transform: translate(-15px, 15px) translateY(-100%);
+  -ms-transform: translate(-15px, 15px) translateY(-100%);
+  transform: translate(-15px, 15px) translateY(-100%);
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+#sidebar .widget-wrap:nth-child(2) .widget:before {
+  background-image: url("/images/xh/eat.gif");
+}
+#sidebar .widget-wrap:nth-child(3) .widget:before {
+  background-image: url("/images/xh/呃.gif");
+}
+#sidebar .widget-wrap:nth-child(4) .widget:before {
+  background-image: url("/images/xh/sq.gif");
+}
 .widget-wrap {
   margin: 20px 0;
 }
@@ -1540,22 +1566,6 @@ pre .javascript .function {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  position: relative;
-}
-.widget .archive-list:before {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
-  -webkit-transform: translateY(-15px) translateY(-100%);
-  -moz-transform: translateY(-15px) translateY(-100%);
-  -ms-transform: translateY(-15px) translateY(-100%);
-  transform: translateY(-15px) translateY(-100%);
-  width: 50px;
-  height: 50px;
-  background: url("/images/xh/额.gif") no-repeat;
-  background-size: 100% auto;
-  z-index: -1;
 }
 .widget .archive-list .archive-list-item {
   background-color: #f0f0f0;
@@ -1619,22 +1629,6 @@ pre .javascript .function {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  position: relative;
-}
-.widget .tag-list:before {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
-  -webkit-transform: translateY(-15px) translateY(-100%);
-  -moz-transform: translateY(-15px) translateY(-100%);
-  -ms-transform: translateY(-15px) translateY(-100%);
-  transform: translateY(-15px) translateY(-100%);
-  width: 50px;
-  height: 50px;
-  background: url("/images/xh/呃.gif") no-repeat;
-  background-size: 100% auto;
-  z-index: -1;
 }
 .widget .tag-list .tag-list-item {
   background-color: #f0f0f0;
