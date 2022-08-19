@@ -134,4 +134,9 @@
 
     $container.removeClass('mobile-nav-on');
   });
+  let start_time = new Date().getTime()
+  window.onload = ()=>{
+    let logText = `本次加载用了${(new Date().getTime()-start_time)/1000}s`
+    console.log(`%c${logText}`, 'color: #000; background: #fff');
+  }
 })(jQuery);
