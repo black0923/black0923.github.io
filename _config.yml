@@ -6,7 +6,9 @@
 title: 小黑
 subtitle: ''
 description: 'github.com/black0923'
-keywords: 'black,小黑'
+keywords:
+- black
+- 小黑
 author: black0923
 language: zh-CN
 timezone: ''
