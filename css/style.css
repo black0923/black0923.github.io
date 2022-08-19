@@ -127,6 +127,17 @@ body {
   font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-text-size-adjust: 100%;
 }
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b5bbc4;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0);
+}
 .outer {
   margin: 0 0 0 20vw;
   padding: 0 20px;
@@ -504,7 +515,7 @@ body {
   color: #777;
 }
 .article {
-  margin: 50px 0;
+  margin: 20px 0;
 }
 .article-inner {
   overflow: hidden;
@@ -749,7 +760,7 @@ a.article-title:hover {
 }
 @media screen and (min-width: 768px) {
   #article-nav {
-    margin: 50px 0;
+    margin: 20px 0;
   }
   #article-nav:before {
     width: 8px;
@@ -773,7 +784,7 @@ a.article-title:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
   display: block;
 }
@@ -947,13 +958,13 @@ a.article-title:hover {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 3px;
-  margin: 50px 0;
+  margin: 20px 0;
 }
 #comments a {
   color: #0094ff;
 }
 .archives-wrap {
-  margin: 50px 0;
+  margin: 20px 0;
 }
 .archives:before,
 .archives:after {
@@ -1020,7 +1031,7 @@ a.article-title:hover {
   display: block;
 }
 #page-nav {
-  margin: 50px auto;
+  margin: 20px auto;
   background: #fff;
   -webkit-box-shadow: 1px 2px 3px #ddd;
   box-shadow: 1px 2px 3px #ddd;
@@ -1297,12 +1308,16 @@ pre .javascript .function {
   position: fixed;
   left: 0;
   top: 0;
-  overflow-y: auto;
+  overflow-y: overlay;
   overflow-x: hidden;
   background-color: #fff;
   -webkit-box-shadow: 1px 2px 3px #ddd;
   box-shadow: 1px 2px 3px #ddd;
   z-index: 9;
+}
+#sidebar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 #sidebar::before {
   content: '';
@@ -1323,7 +1338,7 @@ pre .javascript .function {
   z-index: -1;
 }
 .widget-wrap {
-  margin: 50px 0;
+  margin: 20px 0;
 }
 #user {
   margin: 50px 0;
@@ -1531,7 +1546,7 @@ pre .javascript .function {
   padding: 2px 6px;
   margin-right: 6px;
   position: relative;
-  border-radius: 2px;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   cursor: pointer;
 }
 .widget .archive-list .archive-list-item:hover {
@@ -1594,7 +1609,7 @@ pre .javascript .function {
   padding: 2px 6px;
   margin-right: 6px;
   position: relative;
-  border-radius: 2px;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   cursor: pointer;
 }
 .widget .tag-list .tag-list-item:hover {
