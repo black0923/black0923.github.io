@@ -1310,7 +1310,6 @@ pre .javascript .function {
   top: 0;
   overflow-y: overlay;
   overflow-x: hidden;
-  background: url("/images/xh/散步.gif") no-repeat right bottom;
   background-color: #fff;
   -webkit-box-shadow: 1px 2px 3px #ddd;
   box-shadow: 1px 2px 3px #ddd;
@@ -1362,7 +1361,7 @@ pre .javascript .function {
   width: 100px;
   height: 100px;
   background: url("images/face.jpg") center;
-  background-size: cover;
+  background-size: 134% auto;
   border-radius: 50%;
 }
 #user .face .face_img:hover {
