@@ -108,3 +108,12 @@ deploy:
   type: git
   repo: git@github.com:black0923/black0923.github.io.git
   branch: pg-pages
+
+# Extensions
+plugins:
+    hexo-generator-feed
+#Feed Atom
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
