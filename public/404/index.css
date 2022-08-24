@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#Not_Found_Page{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+a{
+    font-size: 30vw;
+    text-decoration: none;
+    color: #000;
+}
