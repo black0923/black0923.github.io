@@ -4,9 +4,9 @@ date: 2022-08-17 14:16:08
 tags: GitHub
 description: ' '
 ---
-## 一，创建[GitHub Pages](https://pages.github.com/)项目
+## 创建[GitHub Pages](https://pages.github.com/)项目
 
-### 1，首先你需要注册一个 GitHub 账号，并在个人主界面里选择创建一个新的 Repository 。
+### 首先你需要注册一个 GitHub 账号，并在个人主界面里选择创建一个新的 Repository 。
 
 项目命名格式：username.github.io，并设置为Public
 ![new_repository](/images/new_repository.png)
@@ -15,9 +15,9 @@ description: ' '
 ![new_repository](/images/setting.png)
 打开 username.github.io 就可以看到自己的GitHub Pages了
 
-## 二，使用[HEXO](https://hexo.io/zh-cn/docs/)
+## 使用[HEXO](https://hexo.io/zh-cn/docs/)
 
-### 1，安装 Hexo
+### 安装 Hexo
 
 安装 Hexo 相当简单，只需要先安装下列应用程序即可：
 ·[Node.js](https://nodejs.org/en/) (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)
@@ -35,7 +35,7 @@ npm install -g hexo-cli
 npm install hexo
 ```
 
-### 2，新建 Hexo项目
+### 新建 Hexo项目
 
 安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。
 
@@ -45,7 +45,7 @@ cd my_hexo_demo
 npm install
 ```
 
-### 3，运行 Hexo项目
+### 运行 Hexo项目
 
 安装完依赖 使用
 
@@ -55,7 +55,7 @@ npm run server
 
 启动服务，就可以在[本机4000端口](http://localhost:4000)查看效果
 
-## 三，使用Hexo编译并更新到GitHub分支
+## 使用Hexo编译并更新到GitHub分支
 
 根目录找到_config.yml文件，并配置
 
