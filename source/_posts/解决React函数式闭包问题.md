@@ -2,8 +2,8 @@
 title: 解决React函数式闭包问题
 date: 2022-08-30 16:22:31
 tags: [React,Hook]
+description: ' '
 ---
-
 
 ```tsx
 import React, { useState, useEffect } from 'react';
