@@ -8,6 +8,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
     guest = guest.split(',').filter(item => {
       return GUEST.includes(item);
     });
+    // https://github.com/GamerNoTitle/Valine-Magic/tree/master/Classification/aodamiao
     const adm_emoji = {
       cdn:'https://valinecdn.bili33.top/',
       data:{
