@@ -387,33 +387,5 @@ darkmode.showWidget();
 </script>
 
 
-<script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
-    });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : true,
-      notify     : true,
-      appId      : 'Ra5FM7e7ooXjwEwXn7KzKha3-gzGzoHsz',
-      appKey     : 'pb2onemFDdZr3ZcI4hJuQMT5',
-      placeholder: "(〃'▽'〃)说点什么...",
-      avatar     : 'monsterid',
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : true,
-      lang       : 'zh-cn' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : true,
-      serverURLs : ''
-    });
-  }, window.Valine);
-});
-</script>
-
 </body>
 </html>
