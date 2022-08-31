@@ -631,6 +631,7 @@ changyan:
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://github.com/xCss/Valine
+# https://console.leancloud.cn/apps 查看
 valine:
   enable: true
   appid:  Ra5FM7e7ooXjwEwXn7KzKha3-gzGzoHsz # your leancloud application appid
@@ -638,7 +639,7 @@ valine:
   notify: true # Mail notifier
   verify: true # Verification code
   placeholder: 半亩方塘一鉴开，天光云影共徘徊。问渠那得清如许？为有源头活水来 # Comment box placeholder
-  avatar: # Gravatar style
+  avatar: monsterid # https://valine.js.org/avatar.html
   guest_info: nick,mail,link # Custom comment header
   requiredFields: nick,mail
   pageSize: 10 # Pagination size
