@@ -638,7 +638,7 @@ valine:
   appkey:  pb2onemFDdZr3ZcI4hJuQMT5 # your leancloud application appkey
   notify: true # Mail notifier
   verify: true # Verification code
-  placeholder: 半亩方塘一鉴开，天光云影共徘徊。问渠那得清如许？为有源头活水来 # Comment box placeholder
+  placeholder: (〃'▽'〃)说点什么... # Comment box placeholder
   avatar: monsterid # https://valine.js.org/avatar.html
   guest_info: nick,mail,link # Custom comment header
   requiredFields: nick,mail
