@@ -639,7 +639,7 @@ valine:
   notify: true # Mail notifier
   verify: true # Verification code
   placeholder: (〃'▽'〃)说点什么... # Comment box placeholder
-  avatar: monsterid # https://valine.js.org/avatar.html
+  avatar: robohash # https://valine.js.org/avatar.html
   guest_info: nick,mail # Custom comment header ： nick,mail,link
   requiredFields: nick,mail
   pageSize: 10 # Pagination size
