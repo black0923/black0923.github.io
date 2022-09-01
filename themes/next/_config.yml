@@ -640,7 +640,7 @@ valine:
   verify: true # Verification code
   placeholder: (〃'▽'〃)说点什么... # Comment box placeholder
   avatar: monsterid # https://valine.js.org/avatar.html
-  guest_info: nick,mail,link # Custom comment header
+  guest_info: nick,mail # Custom comment header ： nick,mail,link
   requiredFields: nick,mail
   pageSize: 10 # Pagination size
   language: zh-cn # Language, available values: en, zh-cn
