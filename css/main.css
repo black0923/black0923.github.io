@@ -245,6 +245,9 @@ video {
 #valine-comments img {
   display: inline-block !important;
 }
+.vpower {
+  display: none;
+}
 hr {
   background-image: repeating-linear-gradient(-45deg, #ddd, #ddd 4px, transparent 4px, transparent 8px);
   border: 0;
@@ -1196,7 +1199,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #beb6cb;
+  background: #c275bd;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
