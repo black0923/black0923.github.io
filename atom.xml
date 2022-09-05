@@ -6,7 +6,7 @@
   <link href="https://black0923.github.io/atom.xml" rel="self"/>
   
   <link href="https://black0923.github.io/"/>
-  <updated>2022-09-05T02:26:33.936Z</updated>
+  <updated>2022-09-05T02:37:45.584Z</updated>
   <id>https://black0923.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>文本下载</title>
+    <link href="https://black0923.github.io/2022/09/05/%E6%96%87%E6%9C%AC%E4%B8%8B%E8%BD%BD/"/>
+    <id>https://black0923.github.io/2022/09/05/%E6%96%87%E6%9C%AC%E4%B8%8B%E8%BD%BD/</id>
+    <published>2022-09-05T02:34:23.000Z</published>
+    <updated>2022-09-05T02:37:45.584Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">downloadByBlob</span>(<span class="params">fileName, content</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> blob = <span class="keyword">new</span> <span class="title class_">Blob</span>([content], &#123;</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;text/plain;charset=utf-8&#x27;</span>,</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">const</span> reader = <span class="keyword">new</span> <span class="title class_">FileReader</span>();</span><br><span class="line">  reader.<span class="title function_">readAsDataURL</span>(blob);</span><br><span class="line">  reader.<span class="property">onload</span> = <span class="keyword">function</span> (<span class="params">e</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> a = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line">    a.<span class="property">download</span> = fileName;</span><br><span class="line">    a.<span class="property">href</span> = e.<span class="property">target</span>.<span class="property">result</span>;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">appendChild</span>(a);</span><br><span class="line">    a.<span class="title function_">click</span>();</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">removeChild</span>(a);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</summary>
+      
+    
+    
+    
+    
+    <category term="JavaScript" scheme="https://black0923.github.io/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>黄豆焖猪蹄</title>
