@@ -1,1 +1,1 @@
-[小黑](https://black0923.github.io/)
+[入口](https://black0923.github.io/)
