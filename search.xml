@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/hello-world.html</url>
+    <content><![CDATA[<p>我的第一篇blog，欢迎参观我的<a href="https://github.com/black0923">GitHub</a></p>
+<span id="more"></span>
+]]></content>
+  </entry>
+  <entry>
     <title>怎么结合Hexo在GitHub搭建自己的博客网站</title>
     <url>/%E6%80%8E%E4%B9%88%E7%BB%93%E5%90%88Hexo%E5%9C%A8GitHub%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99.html</url>
     <content><![CDATA[<h2 id="创建GitHub-Pages项目"><a href="#创建GitHub-Pages项目" class="headerlink" title="创建GitHub Pages项目"></a>创建<a href="https://pages.github.com/">GitHub Pages</a>项目</h2><h3 id="首先你需要注册一个-GitHub-账号，并在个人主界面里选择创建一个新的-Repository-。"><a href="#首先你需要注册一个-GitHub-账号，并在个人主界面里选择创建一个新的-Repository-。" class="headerlink" title="首先你需要注册一个 GitHub 账号，并在个人主界面里选择创建一个新的 Repository 。"></a>首先你需要注册一个 GitHub 账号，并在个人主界面里选择创建一个新的 Repository 。</h3><p>项目命名格式：username.github.io，并设置为Public<br><img src="/images/new_repository.png" alt="new_repository"><br>新建index.html写入内容提交代码后<br>在配置中找到pages项，配置使用哪个分支代码<br><img src="/images/setting.png" alt="new_repository"><br>打开 username.github.io 就可以看到自己的GitHub Pages了</p>
@@ -30,13 +37,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/hello-world.html</url>
-    <content><![CDATA[<p>我的第一篇blog，欢迎参观我的<a href="https://github.com/black0923">GitHub</a></p>
-<span id="more"></span>
-]]></content>
-  </entry>
-  <entry>
     <title>数组扁平化</title>
     <url>/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96.html</url>
     <content><![CDATA[<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">把嵌套n层的数组，转换成一层，例如：</span><br><span class="line">[1,[2,3,[4,5]]]======&gt;[1,2,3,4,5]</span><br></pre></td></tr></table></figure>
@@ -49,6 +49,15 @@
 <h2 id="flat"><a href="#flat" class="headerlink" title="flat"></a>flat</h2><figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,[<span class="number">2</span>,<span class="number">3</span>,[<span class="number">4</span>,<span class="number">5</span>]]]</span><br><span class="line"></span><br><span class="line"><span class="comment">// 默认转换嵌套层数1</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr.<span class="title function_">flat</span>()); <span class="comment">//  [1, 2, 3, [4, 5]]</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr.<span class="title function_">flat</span>(<span class="number">1</span>)); <span class="comment">// [1, 2, 3, [4, 5]]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 指定转换的嵌套层数</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr.<span class="title function_">flat</span>(<span class="number">2</span>)); <span class="comment">//  [1, 2, 3, 4, 5]</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">// 不管嵌套多少层</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr.<span class="title function_">flat</span>(<span class="title class_">Infinity</span>)); <span class="comment">//  [1, 2, 3, 4, 5]</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">// 自动跳过空位</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>([<span class="number">1</span>, [<span class="number">2</span>, , <span class="number">3</span>]].<span class="title function_">flat</span>()); <span class="comment">//  [1, 2, 3]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 不改变原数组</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr) <span class="comment">//  [1,[2,3,[4,5]]]</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="toString-split"><a href="#toString-split" class="headerlink" title="toString + split"></a>toString + split</h2><figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,[<span class="number">2</span>,<span class="number">3</span>,[<span class="number">4</span>,<span class="number">5</span>]]]</span><br><span class="line">arr = arr.<span class="title function_">toString</span>() <span class="comment">// &#x27;1,2,3,4,5&#x27; join方法也可以</span></span><br><span class="line">arr = arr.<span class="title function_">split</span>(<span class="string">&#x27;,&#x27;</span>) <span class="comment">//  [&#x27;1&#x27;, &#x27;2&#x27;, &#x27;3&#x27;, &#x27;4&#x27;, &#x27;5&#x27;]</span></span><br><span class="line">arr = arr.<span class="title function_">map</span>(<span class="function"><span class="params">item</span>=&gt;</span><span class="title class_">Number</span>(item)) <span class="comment">//  [1, 2, 3, 4, 5]</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文本下载</title>
+    <url>/%E6%96%87%E6%9C%AC%E4%B8%8B%E8%BD%BD.html</url>
+    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">downloadByBlob</span>(<span class="params">fileName, content</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> blob = <span class="keyword">new</span> <span class="title class_">Blob</span>([content], &#123;</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;text/plain;charset=utf-8&#x27;</span>,</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">const</span> reader = <span class="keyword">new</span> <span class="title class_">FileReader</span>();</span><br><span class="line">  reader.<span class="title function_">readAsDataURL</span>(blob);</span><br><span class="line">  reader.<span class="property">onload</span> = <span class="keyword">function</span> (<span class="params">e</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> a = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line">    a.<span class="property">download</span> = fileName;</span><br><span class="line">    a.<span class="property">href</span> = e.<span class="property">target</span>.<span class="property">result</span>;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">appendChild</span>(a);</span><br><span class="line">    a.<span class="title function_">click</span>();</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">removeChild</span>(a);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
         <tag>JavaScript</tag>
@@ -71,17 +80,6 @@
       </tags>
   </entry>
   <entry>
-    <title>黄豆焖猪蹄</title>
-    <url>/%E9%BB%84%E8%B1%86%E7%84%96%E7%8C%AA%E8%B9%84.html</url>
-    <content><![CDATA[<h2 id="黄豆泡2h"><a href="#黄豆泡2h" class="headerlink" title="黄豆泡2h"></a>黄豆泡2h</h2><h2 id="猪蹄焯水"><a href="#猪蹄焯水" class="headerlink" title="猪蹄焯水"></a>猪蹄焯水</h2><p>首选🐷后大腿一只<br>加姜，料酒<br>冷水下锅，水开焯3min<br>洗干净</p>
-<h2 id="炒干"><a href="#炒干" class="headerlink" title="炒干"></a>炒干</h2><p>放姜一起炒干，然后加黄豆再炒一会<br>菜脯单独炒香</p>
-<h2 id="高压锅40min"><a href="#高压锅40min" class="headerlink" title="高压锅40min"></a>高压锅40min</h2><p>转高压锅，加水，2勺盐<br>大火，吹气转中火，总大概40min</p>
-]]></content>
-      <tags>
-        <tag>菜谱</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>输入URL到页面展示过程</title>
     <url>/%E8%BE%93%E5%85%A5URL%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%A4%BA%E8%BF%87%E7%A8%8B.html</url>
     <content><![CDATA[<h2 id="查找缓存"><a href="#查找缓存" class="headerlink" title="查找缓存"></a>查找缓存</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">浏览器先查看浏览器缓存-系统缓存-路由缓存中是否有该地址页面，</span><br><span class="line">如果有则显示页面内容。如果没有则进行下一步。</span><br></pre></td></tr></table></figure>
@@ -100,12 +98,14 @@
       </tags>
   </entry>
   <entry>
-    <title>文本下载</title>
-    <url>/%E6%96%87%E6%9C%AC%E4%B8%8B%E8%BD%BD.html</url>
-    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">downloadByBlob</span>(<span class="params">fileName, content</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> blob = <span class="keyword">new</span> <span class="title class_">Blob</span>([content], &#123;</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;text/plain;charset=utf-8&#x27;</span>,</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">const</span> reader = <span class="keyword">new</span> <span class="title class_">FileReader</span>();</span><br><span class="line">  reader.<span class="title function_">readAsDataURL</span>(blob);</span><br><span class="line">  reader.<span class="property">onload</span> = <span class="keyword">function</span> (<span class="params">e</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> a = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line">    a.<span class="property">download</span> = fileName;</span><br><span class="line">    a.<span class="property">href</span> = e.<span class="property">target</span>.<span class="property">result</span>;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">appendChild</span>(a);</span><br><span class="line">    a.<span class="title function_">click</span>();</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">removeChild</span>(a);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>黄豆焖猪蹄</title>
+    <url>/%E9%BB%84%E8%B1%86%E7%84%96%E7%8C%AA%E8%B9%84.html</url>
+    <content><![CDATA[<h2 id="黄豆泡2h"><a href="#黄豆泡2h" class="headerlink" title="黄豆泡2h"></a>黄豆泡2h</h2><h2 id="猪蹄焯水"><a href="#猪蹄焯水" class="headerlink" title="猪蹄焯水"></a>猪蹄焯水</h2><p>首选🐷后大腿一只<br>加姜，料酒<br>冷水下锅，水开焯3min<br>洗干净</p>
+<h2 id="炒干"><a href="#炒干" class="headerlink" title="炒干"></a>炒干</h2><p>放姜一起炒干，然后加黄豆再炒一会<br>菜脯单独炒香</p>
+<h2 id="高压锅40min"><a href="#高压锅40min" class="headerlink" title="高压锅40min"></a>高压锅40min</h2><p>转高压锅，加水，2勺盐<br>大火，吹气转中火，总大概40min</p>
 ]]></content>
       <tags>
-        <tag>JavaScript</tag>
+        <tag>菜谱</tag>
       </tags>
   </entry>
 </search>
