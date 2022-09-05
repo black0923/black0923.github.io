@@ -139,3 +139,24 @@ baidu_url_submit:
   token: mGq6P1vXzlEUSweX # 秘钥
   path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
 
+# 开启压缩
+neat_enable: true
+
+neat_html:
+  enable: true
+  exclude:
+
+neat_css:
+  enable: true
+  exclude:
+  - '**/*.min.css'
+
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+  - '**/*.min.js'
+  - '**/index.js'
+
