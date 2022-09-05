@@ -6,7 +6,7 @@
   <link href="https://black0923.github.io/atom.xml" rel="self"/>
   
   <link href="https://black0923.github.io/"/>
-  <updated>2022-08-30T08:48:25.283Z</updated>
+  <updated>2022-09-05T02:26:33.936Z</updated>
   <id>https://black0923.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>黄豆焖猪蹄</title>
+    <link href="https://black0923.github.io/2022/09/05/%E9%BB%84%E8%B1%86%E7%84%96%E7%8C%AA%E8%B9%84/"/>
+    <id>https://black0923.github.io/2022/09/05/%E9%BB%84%E8%B1%86%E7%84%96%E7%8C%AA%E8%B9%84/</id>
+    <published>2022-09-05T02:11:23.000Z</published>
+    <updated>2022-09-05T02:26:33.936Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="黄豆泡2h"><a href="#黄豆泡2h" class="headerlink" title="黄豆泡2h"></a>黄豆泡2h</h2><h2 id="猪蹄焯水"><a href="#猪蹄焯水" class="headerlink" title="猪蹄焯水"></a>猪蹄焯水</h2><p>首选🐷后大腿一只<br>加姜，料酒<br>冷水下锅，水开焯3min<br>洗干净</p><h2 id="炒干"><a href="#炒干" class="headerlink" title="炒干"></a>炒干</h2><p>放姜一起炒干，然后加黄豆再炒一会<br>菜脯单独炒香</p><h2 id="高压锅40min"><a href="#高压锅40min" class="headerlink" title="高压锅40min"></a>高压锅40min</h2><p>转高压锅，加水，2勺盐<br>大火，吹气转中火，总大概40min</p>]]></content>
+    
+    
+    <summary type="html"> </summary>
+    
+    
+    
+    
+    <category term="菜谱" scheme="https://black0923.github.io/tags/%E8%8F%9C%E8%B0%B1/"/>
+    
+  </entry>
   
   <entry>
     <title>解决React函数式闭包问题</title>
