@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/hello-world.html</url>
-    <content><![CDATA[<p>我的第一篇blog，欢迎参观我的<a href="https://github.com/black0923">GitHub</a></p>
-<span id="more"></span>
-]]></content>
-  </entry>
-  <entry>
     <title>怎么结合Hexo在GitHub搭建自己的博客网站</title>
     <url>/%E6%80%8E%E4%B9%88%E7%BB%93%E5%90%88Hexo%E5%9C%A8GitHub%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99.html</url>
     <content><![CDATA[<h2 id="创建GitHub-Pages项目"><a href="#创建GitHub-Pages项目" class="headerlink" title="创建GitHub Pages项目"></a>创建<a href="https://pages.github.com/">GitHub Pages</a>项目</h2><h3 id="首先你需要注册一个-GitHub-账号，并在个人主界面里选择创建一个新的-Repository-。"><a href="#首先你需要注册一个-GitHub-账号，并在个人主界面里选择创建一个新的-Repository-。" class="headerlink" title="首先你需要注册一个 GitHub 账号，并在个人主界面里选择创建一个新的 Repository 。"></a>首先你需要注册一个 GitHub 账号，并在个人主界面里选择创建一个新的 Repository 。</h3><p>项目命名格式：username.github.io，并设置为Public<br><img src="/images/new_repository.png" alt="new_repository"><br>新建index.html写入内容提交代码后<br>在配置中找到pages项，配置使用哪个分支代码<br><img src="/images/setting.png" alt="new_repository"><br>打开 username.github.io 就可以看到自己的GitHub Pages了</p>
@@ -53,6 +46,13 @@
       <tags>
         <tag>JavaScript</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/hello-world.html</url>
+    <content><![CDATA[<p>我的第一篇blog，欢迎参观我的<a href="https://github.com/black0923">GitHub</a></p>
+<span id="more"></span>
+]]></content>
   </entry>
   <entry>
     <title>文本下载</title>
