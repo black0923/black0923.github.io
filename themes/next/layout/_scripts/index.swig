@@ -18,7 +18,7 @@
 {% include 'three.swig' %}
 
 
-// darkmode黑白切换js 全局配置添加时 搭配pjax配置会产生变量污染 这里添加使用pjax会缓存只会引入一次
+<!--darkmode黑白切换js 全局配置添加时 搭配pjax配置会产生变量污染 这里添加使用pjax会缓存只会引入一次-->
 <script src="https://unpkg.com/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
 
 <script>
