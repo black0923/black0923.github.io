@@ -773,6 +773,8 @@ local_search:
   unescape: false
   # Preload the search data when the page loads.
   preload: false
+  # 搜索结果链接是否删除html后缀
+  delete_html_suffix: true
 
 # Swiftype Search API Key
 swiftype_key:
