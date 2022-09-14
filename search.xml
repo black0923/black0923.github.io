@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/hello-world.html</url>
+    <content><![CDATA[<p>我的第一篇blog，欢迎参观我的<a href="https://github.com/black0923">GitHub</a></p>
+<span id="more"></span>
+]]></content>
+  </entry>
+  <entry>
     <title>怎么结合Hexo在GitHub搭建自己的博客网站</title>
     <url>/%E6%80%8E%E4%B9%88%E7%BB%93%E5%90%88Hexo%E5%9C%A8GitHub%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99.html</url>
     <content><![CDATA[<h2 id="创建GitHub-Pages项目"><a href="#创建GitHub-Pages项目" class="headerlink" title="创建GitHub Pages项目"></a>创建<a href="https://pages.github.com/">GitHub Pages</a>项目</h2><h3 id="首先你需要注册一个-GitHub-账号，并在个人主界面里选择创建一个新的-Repository-。"><a href="#首先你需要注册一个-GitHub-账号，并在个人主界面里选择创建一个新的-Repository-。" class="headerlink" title="首先你需要注册一个 GitHub 账号，并在个人主界面里选择创建一个新的 Repository 。"></a>首先你需要注册一个 GitHub 账号，并在个人主界面里选择创建一个新的 Repository 。</h3><p>项目命名格式：username.github.io，并设置为Public<br><img src="/images/new_repository.png" alt="new_repository"><br>新建index.html写入内容提交代码后<br>在配置中找到pages项，配置使用哪个分支代码<br><img src="/images/setting.png" alt="new_repository"><br>打开 username.github.io 就可以看到自己的GitHub Pages了</p>
@@ -46,13 +53,6 @@
       <tags>
         <tag>JavaScript</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/hello-world.html</url>
-    <content><![CDATA[<p>我的第一篇blog，欢迎参观我的<a href="https://github.com/black0923">GitHub</a></p>
-<span id="more"></span>
-]]></content>
   </entry>
   <entry>
     <title>数组扁平化</title>
@@ -107,15 +107,6 @@
       </tags>
   </entry>
   <entry>
-    <title>文本下载</title>
-    <url>/%E6%96%87%E6%9C%AC%E4%B8%8B%E8%BD%BD.html</url>
-    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">downloadByBlob</span>(<span class="params">fileName, content</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> blob = <span class="keyword">new</span> <span class="title class_">Blob</span>([content], &#123;</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;text/plain;charset=utf-8&#x27;</span>,</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">const</span> reader = <span class="keyword">new</span> <span class="title class_">FileReader</span>();</span><br><span class="line">  reader.<span class="title function_">readAsDataURL</span>(blob);</span><br><span class="line">  reader.<span class="property">onload</span> = <span class="keyword">function</span> (<span class="params">e</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> a = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line">    a.<span class="property">download</span> = fileName;</span><br><span class="line">    a.<span class="property">href</span> = e.<span class="property">target</span>.<span class="property">result</span>;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">appendChild</span>(a);</span><br><span class="line">    a.<span class="title function_">click</span>();</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">removeChild</span>(a);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>黄豆焖猪蹄</title>
     <url>/%E9%BB%84%E8%B1%86%E7%84%96%E7%8C%AA%E8%B9%84.html</url>
     <content><![CDATA[<h2 id="黄豆泡2h"><a href="#黄豆泡2h" class="headerlink" title="黄豆泡2h"></a>黄豆泡2h</h2><h2 id="猪蹄焯水"><a href="#猪蹄焯水" class="headerlink" title="猪蹄焯水"></a>猪蹄焯水</h2><p>首选🐷后大腿一只<br>冷水下锅，加姜，料酒，水开焯3min<br>洗干净</p>
@@ -124,6 +115,15 @@
 ]]></content>
       <tags>
         <tag>菜谱</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>文本下载</title>
+    <url>/%E6%96%87%E6%9C%AC%E4%B8%8B%E8%BD%BD.html</url>
+    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">downloadByBlob</span>(<span class="params">fileName, content</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> blob = <span class="keyword">new</span> <span class="title class_">Blob</span>([content], &#123;</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;text/plain;charset=utf-8&#x27;</span>,</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">const</span> reader = <span class="keyword">new</span> <span class="title class_">FileReader</span>();</span><br><span class="line">  reader.<span class="title function_">readAsDataURL</span>(blob);</span><br><span class="line">  reader.<span class="property">onload</span> = <span class="keyword">function</span> (<span class="params">e</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> a = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line">    a.<span class="property">download</span> = fileName;</span><br><span class="line">    a.<span class="property">href</span> = e.<span class="property">target</span>.<span class="property">result</span>;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">appendChild</span>(a);</span><br><span class="line">    a.<span class="title function_">click</span>();</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">removeChild</span>(a);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>JavaScript</tag>
       </tags>
   </entry>
 </search>
