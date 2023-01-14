@@ -2,7 +2,7 @@
 title: 手写Promise雏形
 date: 2022-09-14 11:30:04
 tags: JavaScript
-description:
+description: ' '
 ---
 
 * 了解Promise
@@ -10,7 +10,7 @@ description:
   * executor接收两个参数：resolve, reject 执行时修改status，且其中一个执行后，不再修改status
   * status：pending、fulfilled、rejected
   * 原型上有then方法，待成功/失败后执行回调
-<!--more-->
+
 
 ```ts
 class Promise {

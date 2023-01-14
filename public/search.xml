@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>axios取消请求</title>
+    <url>/axios%E5%8F%96%E6%B6%88%E8%AF%B7%E6%B1%82.html</url>
+    <content><![CDATA[<blockquote>
+<p>如何取消axios请求</p>
+</blockquote>
+<figure class="highlight ts"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> data &#123; endDate，startDate &#125;</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns</span> </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@description</span>: 获取首页数据</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">getHomePageInfo_cancel</span>:<span class="title class_">Canceler</span> | <span class="literal">null</span> = <span class="literal">null</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">getHomePageInfo</span>(<span class="params">data</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (getHomePageInfo_cancel !== <span class="literal">null</span>) &#123;</span><br><span class="line">        <span class="title function_">getHomePageInfo_cancel</span>() <span class="comment">// 如果上次请求没结束，调用取消方法</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> http.<span class="property">request</span>&lt;<span class="built_in">any</span>&gt;(&#123;</span><br><span class="line">        <span class="attr">url</span>: <span class="string">`/sys/homePage/homePageInfo`</span>,</span><br><span class="line">        <span class="attr">method</span>: <span class="string">&#x27;POST&#x27;</span>,</span><br><span class="line">        <span class="attr">cancelToken</span>: <span class="keyword">new</span> axios.<span class="title class_">CancelToken</span>(<span class="keyword">function</span> (<span class="params">c</span>) &#123; getHomePageInfo_cancel = c &#125;), <span class="comment">// 赋值取消的方法</span></span><br><span class="line">        data</span><br><span class="line">    &#125;).<span class="title function_">then</span>(<span class="function"><span class="params">res</span> =&gt;</span> &#123;</span><br><span class="line">        getHomePageInfo_cancel = <span class="literal">null</span>;</span><br><span class="line">        <span class="keyword">return</span> res</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>ajax</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/hello-world.html</url>
     <content><![CDATA[<p>我的第一篇blog，欢迎参观我的<a href="https://github.com/black0923">GitHub</a></p>
@@ -44,7 +56,7 @@
 <li>Promise是一个类，构造函数接收一个函数executor，默认执行</li>
 <li>executor接收两个参数：resolve, reject 执行时修改status，且其中一个执行后，不再修改status</li>
 <li>status：pending、fulfilled、rejected</li>
-<li>原型上有then方法，待成功/失败后执行回调<span id="more"></span></li>
+<li>原型上有then方法，待成功/失败后执行回调</li>
 </ul>
 </li>
 </ul>
@@ -55,20 +67,11 @@
       </tags>
   </entry>
   <entry>
-    <title>文本下载</title>
-    <url>/%E6%96%87%E6%9C%AC%E4%B8%8B%E8%BD%BD.html</url>
-    <content><![CDATA[<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">downloadByBlob</span>(<span class="params">fileName, content</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> blob = <span class="keyword">new</span> <span class="title class_">Blob</span>([content], &#123;</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;text/plain;charset=utf-8&#x27;</span>,</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">const</span> reader = <span class="keyword">new</span> <span class="title class_">FileReader</span>();</span><br><span class="line">  reader.<span class="title function_">readAsDataURL</span>(blob);</span><br><span class="line">  reader.<span class="property">onload</span> = <span class="keyword">function</span> (<span class="params">e</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> a = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line">    a.<span class="property">download</span> = fileName;</span><br><span class="line">    a.<span class="property">href</span> = e.<span class="property">target</span>.<span class="property">result</span>;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">appendChild</span>(a);</span><br><span class="line">    a.<span class="title function_">click</span>();</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">removeChild</span>(a);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <tags>
-        <tag>JavaScript</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>数组扁平化</title>
     <url>/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96.html</url>
-    <content><![CDATA[<figure class="highlight text"><table><tr><td class="code"><pre><span class="line">把嵌套n层的数组，转换成一层，例如：</span><br><span class="line">[1,[2,3,[4,5]]]======&gt;[1,2,3,4,5]</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-
+    <content><![CDATA[<blockquote>
+<p>把嵌套n层的数组，转换成一层，例如：<br> [1,[2,3,[4,5]]]======&gt;[1,2,3,4,5]</p>
+</blockquote>
 <h2 id="递归实现"><a href="#递归实现" class="headerlink" title="递归实现"></a>递归实现</h2><figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>,[<span class="number">2</span>,<span class="number">3</span>,[<span class="number">4</span>,<span class="number">5</span>]]]</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">flatten</span>(<span class="params">arr</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> data = []</span><br><span class="line">    arr.<span class="title function_">forEach</span>(<span class="function"><span class="params">item</span>=&gt;</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="title class_">Array</span>.<span class="title function_">isArray</span>(item))&#123;</span><br><span class="line">            data = data.<span class="title function_">concat</span>(<span class="title function_">flatten</span>(item))</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            data.<span class="title function_">push</span>(item)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">    <span class="keyword">return</span> data</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title function_">flatten</span>(arr)) <span class="comment">//  [1, 2, 3, 4, 5]</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h2><figure class="highlight typescript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>,[<span class="number">2</span>,<span class="number">3</span>,[<span class="number">4</span>,<span class="number">5</span>]]]</span><br><span class="line"><span class="keyword">while</span> (arr.<span class="title function_">find</span>(<span class="function"><span class="params">item</span> =&gt;</span> <span class="title class_">Array</span>.<span class="title function_">isArray</span>(item))) &#123;</span><br><span class="line">    arr = [].<span class="title function_">concat</span>(...arr)</span><br><span class="line">    <span class="comment">// concat : 合并多个数组、单项并返回一个新的数组</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr) <span class="comment">//  [1, 2, 3, 4, 5]</span></span><br></pre></td></tr></table></figure>
@@ -82,10 +85,21 @@
       </tags>
   </entry>
   <entry>
+    <title>文本下载</title>
+    <url>/%E6%96%87%E6%9C%AC%E4%B8%8B%E8%BD%BD.html</url>
+    <content><![CDATA[<blockquote>
+<p>如何下载一段文本</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">downloadByBlob</span>(<span class="params">fileName, content</span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> blob = <span class="keyword">new</span> <span class="title class_">Blob</span>([content], &#123;</span><br><span class="line">    <span class="attr">type</span>: <span class="string">&#x27;text/plain;charset=utf-8&#x27;</span>,</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">const</span> reader = <span class="keyword">new</span> <span class="title class_">FileReader</span>();</span><br><span class="line">  reader.<span class="title function_">readAsDataURL</span>(blob);</span><br><span class="line">  reader.<span class="property">onload</span> = <span class="keyword">function</span> (<span class="params">e</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> a = <span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;a&#x27;</span>);</span><br><span class="line">    a.<span class="property">download</span> = fileName;</span><br><span class="line">    a.<span class="property">href</span> = e.<span class="property">target</span>.<span class="property">result</span>;</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">appendChild</span>(a);</span><br><span class="line">    a.<span class="title function_">click</span>();</span><br><span class="line">    <span class="variable language_">document</span>.<span class="property">body</span>.<span class="title function_">removeChild</span>(a);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>JavaScript</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>输入URL到页面展示过程</title>
     <url>/%E8%BE%93%E5%85%A5URL%E5%88%B0%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%A4%BA%E8%BF%87%E7%A8%8B.html</url>
     <content><![CDATA[<h2 id="查找缓存"><a href="#查找缓存" class="headerlink" title="查找缓存"></a>查找缓存</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">浏览器先查看浏览器缓存-系统缓存-路由缓存中是否有该地址页面，</span><br><span class="line">如果有则显示页面内容。如果没有则进行下一步。</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
 
 <h2 id="DNS-解析"><a href="#DNS-解析" class="headerlink" title="DNS 解析"></a>DNS 解析</h2><figure class="highlight text"><table><tr><td class="code"><pre><span class="line">判断URL是否是一个域名，解析实现域名和ip的转换，并缓存结果</span><br></pre></td></tr></table></figure>
 
