@@ -6,7 +6,7 @@
   <link href="https://gumingyue.top/atom.xml" rel="self"/>
   
   <link href="https://gumingyue.top/"/>
-  <updated>2023-01-14T03:57:59.506Z</updated>
+  <updated>2023-01-14T05:52:36.824Z</updated>
   <id>https://gumingyue.top/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://gumingyue.top/axios%E5%8F%96%E6%B6%88%E8%AF%B7%E6%B1%82"/>
     <id>https://gumingyue.top/axios%E5%8F%96%E6%B6%88%E8%AF%B7%E6%B1%82</id>
     <published>2023-01-14T03:42:06.000Z</published>
-    <updated>2023-01-14T03:57:59.506Z</updated>
+    <updated>2023-01-14T05:52:36.824Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>如何取消axios请求</p></blockquote><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> data &#123; endDate，startDate &#125;</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@returns</span> </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@description</span>: 获取首页数据</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">let</span> <span class="attr">getHomePageInfo_cancel</span>:<span class="title class_">Canceler</span> | <span class="literal">null</span> = <span class="literal">null</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">function</span> <span class="title function_">getHomePageInfo</span>(<span class="params">data</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (getHomePageInfo_cancel !== <span class="literal">null</span>) &#123;</span><br><span class="line">        <span class="title function_">getHomePageInfo_cancel</span>() <span class="comment">// 如果上次请求没结束，调用取消方法</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> http.<span class="property">request</span>&lt;<span class="built_in">any</span>&gt;(&#123;</span><br><span class="line">        <span class="attr">url</span>: <span class="string">`/sys/homePage/homePageInfo`</span>,</span><br><span class="line">        <span class="attr">method</span>: <span class="string">&#x27;POST&#x27;</span>,</span><br><span class="line">        <span class="attr">cancelToken</span>: <span class="keyword">new</span> axios.<span class="title class_">CancelToken</span>(<span class="keyword">function</span> (<span class="params">c</span>) &#123; getHomePageInfo_cancel = c &#125;), <span class="comment">// 赋值取消的方法</span></span><br><span class="line">        data</span><br><span class="line">    &#125;).<span class="title function_">then</span>(<span class="function"><span class="params">res</span> =&gt;</span> &#123;</span><br><span class="line">        getHomePageInfo_cancel = <span class="literal">null</span>;</span><br><span class="line">        <span class="keyword">return</span> res</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -30,6 +30,8 @@
     
     
     
+    
+    <category term="ajax" scheme="https://gumingyue.top/tags/ajax/"/>
     
   </entry>
   
